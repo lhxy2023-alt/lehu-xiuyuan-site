@@ -283,7 +283,7 @@ type *var_name;
 
 不同数据类型的指针之间唯一的不同是，指针所指向的变量或常量的数据类型不同。
 
-![](.\image\c-pointer.png)
+![](./c_image/c-pointer.png)
 
 **声明、定义、使用指针**
 

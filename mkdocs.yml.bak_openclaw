@@ -1,0 +1,172 @@
+site_name: 乐湖修远
+site_url: http://127.0.0.1:8000/
+site_author: PanosPeng
+
+# 版权信息
+copyright: Copyright &copy; 2024 ~ now
+# 主题配置
+theme:
+  name: material
+  language: zh
+  logo: image/lehu_icon.png # 默认路径在docs/下
+  favicon: image/lehu_icon.png
+  features: # 功能1
+    - announce.dismiss # 可以叉掉公告的功能
+    - content.code.copy # 复制代码按钮
+    - content.tooltips # 不太清楚呢这个
+    - header.autohide # 自动隐藏header
+    - navigation.footer # 底部导航栏
+    - navigation.indexes # 索引按钮可以直接触发文件，而不是只能点击其下属选项浏览，这个功能可以给对应的section提供很好的预览和导航功能
+    - navigation.instant.prefetch # 预加载
+    - navigation.instant.progress # 进度条
+    - navigation.path # 导航路径， 目前好像没啥用
+    - navigation.tabs # 顶级索引被作为tab
+    - navigation.tabs.sticky # tab始终可见
+    - navigation.top # 开启顶部导航栏
+    - navigation.tracking # 导航栏跟踪
+    - search.highlight # 搜索高亮
+    - search.share # 搜索分享
+    - search.suggest # 搜索建议
+    - toc.follow # 目录跟踪-页面右侧的小目录
+    # - toc.integrate # 目录跟踪集成到左侧大目录中
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo # 顶栏颜色
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: indigo
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+# 已移除当前版本不识别的顶层 theme 配置，保留最小可运行配置
+
+# 导航树 - 请按照我的做法来做，否则可能无法正常工作。引号可以省略。开头的点和斜杠也可以省略 ("./HOME/about.md" 或 Home/about.md) 。注意，导航树这里的文件名是 filename.md 这样的，但在文件夹中，它实际上被命名为 filename.en.md 和 filename.zh.md。我猜测默认是英文，所以, index.en.md 和 index.md 是一样的。i18n插件会自动识别文件名，然后根据文件名的后缀来切换语言。所以，如果你想添加一个新页面，你需要添加两个文件，一个是 filename.en.md，另一个是 filename.zh.md。其中，filename.en.md 也可以被命名为 filename.md，但是 filename.zh.md 不能被命名为 filename.md，否则会导致无法识别。
+# 
+nav: 
+  - 首页: 
+      - 首页: "index.md"
+      - 案例库: "/cases/"
+      - 前言: "./HOME/preface.md"
+      # - 如何使用这本书: "./HOME/usage_docs.md"
+      - 初入中法——大一篇: "./HOME/first_year.md"
+      - 几条中法学子的经典升学路径 :
+        - 传统金融方向: 
+          - 海外申请: "./HOME/academic_planning/Traditional_Finance/abroad.md"
+          - 内地升学: "./HOME/academic_planning/Traditional_Finance/domestic.md"
+        - 偏量化方向: 
+          - 海外申请: "./HOME/academic_planning/Quantitative_Finance/abroad.md"
+          - 内地升学: "./HOME/academic_planning/Quantitative_Finance/domestic.md"
+        - 纯量化方向: 
+          - 海外申请: "./HOME/academic_planning/Pure_Quantitative/abroad.md"
+          - 内地升学: "./HOME/academic_planning/Pure_Quantitative/domestic.md"
+        - 经济学术方向: 
+          - 海外申请: "./HOME/academic_planning/Economic_Academic/abroad.md"
+          - 内地升学: "./HOME/academic_planning/Economic_Academic/domestic.md"
+      - 中法学子未来可能的就业方向:
+        - 传统金融行业: "./HOME/jobs/jobs.md"
+        - 量化金融: "./HOME/jobs/jobs1.md"
+        - 互联网: "./HOME/jobs/jobs2.md"
+        - AI、大语言模型: "./HOME/jobs/jobs3.md"
+        - 快销: "./HOME/jobs/jobs4.md"
+        - 公务员: "./HOME/jobs/jobs5.md"
+        - 国央企（泛体制）: "./HOME/jobs/guoqi.md"
+        - 教育行业: "./HOME/jobs/jobs7.md"
+        - 失业（创业）: "./HOME/jobs/jobs8.md"
+      - 关于: "./HOME/about.md"
+  - 计算机科学: 
+      - 前言: "./CS_BASE/preface.md"
+      - 准备工作: 
+        - 餐前点心: "./CS_BASE/Tools/dessert.md"
+        - IDE: "./CS_BASE/Tools/ide.md"
+        - Linux: "./CS_BASE/Tools/linux.md"
+        - Git: "./CS_BASE/Tools/git.md"
+        - Github: "./CS_BASE/Tools/github.md"
+        - GPT is all you need: "./CS_BASE/Tools/ai_tools.md"
+
+      - 编程入门:
+        - Python: "./CS_BASE/Introduction2Programming/python.md"
+        - C语言: "./CS_BASE/Introduction2Programming/c.md"
+        - 计算机系统基础: "./CS_BASE/Introduction2Programming/csapp.md"
+      - 数学基础:
+        - 离散数学: "./CS_BASE/math/Discrete_math.md"
+      - 数据结构与算法:
+        - 简单数据结构: "./CS_BASE/DSandAlgorthim/DS.md"
+        - 算法进阶: "./CS_BASE/DSandAlgorthim/algorithm.md"
+      - 数据科学:
+        - 大数据分析: "./CS_BASE/Data_science/big_data.md"
+      - 数学建模:
+        - 美赛数学建模: "./CS_BASE/Math_modeling/MCM.md"
+      - 机器学习:
+        - 传统机器学习: "./CS_BASE/Machine_learning/ml.md"
+      - 深度学习:
+        - 深度学习基础: "./CS_BASE/Deep_learning/dl_basic.md"
+        - 计算机视觉: "./CS_BASE/Deep_learning/cv.md"
+        - 自然语言处理: "./CS_BASE/Deep_learning/nlp.md"
+      - 大语言模型:
+        - 大语言模型: "./CS_BASE/LLM/llm.md"
+        - 多模态大模型: "./CS_BASE/LLM/vllm.md"
+        - 智能体大模型: "./CS_BASE/LLM/agent.md"
+
+# Extensions
+markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - md_in_html
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      normalize_issue_symbols: true
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      auto_append:
+        - includes/mkdocs.md
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: mermaid
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tabbed:
+      alternate_style: true
+      combine_header_slug: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+
+# 网站流量监视
+extra:
+  analytics:
+    # google analysis
+    provider: google
+    property: G-D6ZJ00MSYW
