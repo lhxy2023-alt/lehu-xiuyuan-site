@@ -1,0 +1,20 @@
+:root {
+  --bg: #f8f1ee;
+  --surface: #fffdfb;
+  --surface-alt: #f4e8e3;
+  --surface-soft: #fff6f1;
+  --line: rgba(114, 44, 35, 0.12);
+  --text: #291916;
+  --muted: #7b625b;
+  --brand: #9f2f2f;
+  --brand-deep: #812322;
+  --brand-soft: #f2d7d0;
+  --brand-warm: #c55a4e;
+  --shadow: 0 18px 40px rgba(84, 28, 22, 0.12);
+  --radius-xl: 28px;
+  --radius-lg: 20px;
+  --radius-md: 16px;
+  --phone-width: 390px;
+  --font-sans: "PingFang SC", "Hiragino Sans GB", "Noto Sans SC", sans-serif;
+  --font-display: "STKaiti", "Kaiti SC", "Songti SC", serif;
+}
