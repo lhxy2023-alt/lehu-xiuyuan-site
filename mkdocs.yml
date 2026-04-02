@@ -49,7 +49,7 @@ theme:
 nav: 
   - 首页: 
       - 首页: "index.md"
-      - 案例库: "/cases/"
+      - 案例库: "cases/"
       - 前言: "./HOME/preface.md"
       # - 如何使用这本书: "./HOME/usage_docs.md"
       - 初入中法——大一篇: "./HOME/first_year.md"

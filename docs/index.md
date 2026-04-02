@@ -23,7 +23,7 @@
 
     快速查看录取案例、筛选方向与咨询入口，适合手机端直接浏览。
 
-    [:octicons-arrow-right-24: 进入案例库](/cases/)
+    [:octicons-arrow-right-24: 进入案例库](cases/)
 
 </div>
 
